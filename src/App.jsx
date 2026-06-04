@@ -3,7 +3,6 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { QRCodeCanvas } from "qrcode.react";
 import { supabase } from "./supabase";
-import { FaPhoneAlt, FaEnvelope, FaGlobe } from "react-icons/fa";
 
 // ✅ simple unique id generator
 
@@ -185,6 +184,7 @@ if (updateError) {
           <div
             ref={certificateRef}
             id="certificate"
+
             style={{
               position: "relative",
               width: "1200px",
@@ -225,6 +225,154 @@ if (updateError) {
   }}
 >
   {certificateId}
+</div>
+{/* COMPANY LOGO */}
+<img
+  src="/company.png"
+  alt="company"
+  style={{
+    position: "absolute",
+    top: 65,
+    left: 80,
+    width: 160,
+    height: "auto",
+  }}
+/>
+
+{/* AICTE */}
+<img
+  src="/aicte.png"
+  alt="aicte"
+  style={{
+    position: "absolute",
+    top: 79,
+    left: 665,
+    width: 85,
+    height: "auto",
+  }}
+/>
+
+{/* ISO */}
+<img
+  src="/iso.png"
+  alt="iso"
+  style={{
+    position: "absolute",
+    top: 90,
+    left: 770,
+    width: 90,
+    height: "auto",
+  }}
+/>
+
+{/* APSCHE */}
+<img
+  src="/apsche.png"
+  alt="apsche"
+  style={{
+    position: "absolute",
+    top: 95,
+    left: 880,
+    width: 90,
+    height: "auto",
+  }}
+/>
+
+{/* MSME */}
+<img
+  src="/msme.png"
+  alt="msme"
+  style={{
+    position: "absolute",
+    top: 87,
+    left: 997,
+    width: 135,
+    height: "auto",
+  }}
+/>
+<div
+  style={{
+    position: "absolute",
+    top: "169px",
+    left: "51%",
+    transform: "translateX(-50%)",
+    fontSize: "55px",
+    fontWeight: "700",
+    color: "#0B2E7A",
+    letterSpacing: "6px",
+    fontFamily: "Georgia, serif",
+  }}
+>
+  CERTIFICATE
+</div>
+<div
+  style={{
+    position: "absolute",
+    top: "255px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    display: "flex",
+    alignItems: "center",
+    gap: "15px",
+  }}
+>
+  <div
+    style={{
+      width: "90px",
+      height: "2px",
+      background: "#D4A017",
+    }}
+  />
+
+  <span
+    style={{
+      fontSize: "28px",
+      fontWeight: "700",
+      letterSpacing: "4px",
+      color: "#0B2E7A",
+      fontFamily: "Georgia, serif",
+    }}
+  >
+    OF COMPLETION
+  </span>
+
+  <div
+    style={{
+      width: "90px",
+      height: "2px",
+      background: "#D4A017",
+    }}
+  />
+</div>
+<div
+  style={{
+    position: "absolute",
+    top: "300px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    fontSize: "28px",
+    fontWeight: "700",
+    letterSpacing: "2px",
+    color: "#0B2E7A",
+    fontFamily: "Georgia, serif",
+  }}
+>
+  SNAAL INFO PVT. LTD.
+</div>
+<div
+  style={{
+    position: "absolute",
+    top: "345px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    fontSize: "18px",
+    fontStyle: "italic",
+    letterSpacing: "2px",
+    color: "#333",
+    fontFamily: "Georgia, serif",
+  }}
+>
+  "Where Growth Begins"
 </div>
 <div
   style={{
@@ -271,13 +419,13 @@ if (updateError) {
 <div
   style={{
     position: "absolute",
-    top: "400px",
+    top: "385px",
     left: "52%",
     transform: "translateX(-50%)",
-    width: "700px",
+    width: "745px",
     textAlign: "center",
-    fontSize: "24px",
-    lineHeight: "1.6",
+    fontSize: "20px",
+    lineHeight: "1.5",
     color: "#222",
     fontFamily: "Georgia, serif",
   }}
@@ -287,7 +435,7 @@ if (updateError) {
   <span
     style={{
       color: "#222",
-      fontSize: "40px",
+      fontSize: "34px",
       fontWeight: "bold",
       fontStyle:"oblique",
 
@@ -296,7 +444,7 @@ if (updateError) {
     {formData.fullName}
   </span>{" "}
   
-  has successfully completed an internship in{" "}
+    has successfully completed an internship in{" "}
   
   <span
     style={{
@@ -313,9 +461,24 @@ if (updateError) {
 <strong>{formatDate(formData.startDate)}</strong> to{" "}
 
 <strong>{formatDate(formData.endDate)}</strong>
-  
-  <br />
-  
+
+<br/>
+<span
+  style={{
+    display: "block",
+    marginTop: "13px",
+    fontSize: "16px",
+    lineHeight: "1.6",
+    color: "#333",
+    width: "85%",
+    marginLeft: "auto",
+    marginRight: "auto",
+  }}
+>
+  During this internship, the intern demonstrated strong technical
+  skills, dedication, and a proactive learning attitude while
+  contributing effectively to development projects.
+</span>
 
 </div>
 
@@ -336,9 +499,9 @@ if (updateError) {
               alt="sign1"
               style={{
                 position: "absolute",
-                left: 300,
-                top: 579,
-                height: 70,
+                left: 315,
+                top: 590,
+                height: 50,
                 width: "auto",
                 objectFit: "contain",
               }}
@@ -348,7 +511,7 @@ if (updateError) {
               style={{
                 position: "absolute",
                 left: 310,
-                top: 660,
+                top: 653,
                 width: "220px",
                 textAlign: "center",
                 color: "#0B2E7A",
@@ -372,9 +535,9 @@ if (updateError) {
               alt="sign2"
               style={{
                 position: "absolute",
-                left: 670,
-                top:579,
-                height: 70,
+                left: 685,
+                top:590,
+                height: 50,
                 width: "auto",
                 objectFit: "contain",
                 opacity: 0.9,
@@ -385,7 +548,7 @@ if (updateError) {
               style={{
                 position: "absolute",
                 left: 673,
-                top: 655,
+                top: 650,
                 width: "260px",
                 textAlign: "center",
                 color: "#0B2E7A",
@@ -411,11 +574,11 @@ if (updateError) {
               style={{
                 position: "absolute",
                 right: 40,
-                bottom: 145,
-                width: 150,
-                height: 150,
+                bottom: 155,
+                width: 130,
+                height: 130,
                 objectFit: "contain",
-                 transform: "rotate(17deg)",
+                 transform: "rotate(19deg)",
               }}
             />
 {/* CONTACT INFO */}
@@ -433,26 +596,24 @@ if (updateError) {
   }}
 >
   <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-    <FaPhoneAlt />
-    <span>8464840592</span>
+   
+    <span>☎ 8464840592</span>
   </div>
 
   <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-    <FaEnvelope />
-    <span>snaalinfo@gmail.com</span>
+    <span>✉ snaalinfo@gmail.com</span>
   </div>
 
   <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-    <FaGlobe />
-    <span>www.snaalinfo.com</span>
+    <span>🌐https://snaalinfo.com</span>
   </div>
 </div>
  {/* COMPANY ADDRESS */}
 <div
   style={{
     position: "absolute",
-    right: 80,
-    bottom: 5,
+    right: 60,
+    bottom: 12,
     width: "400px",
     fontSize: "15px",
     color: "#222",
