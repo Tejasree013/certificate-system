@@ -203,10 +203,10 @@ if (updateError) {
   style={{
     position: "absolute",
     left: 60,
-    top: 325,
+    top: 375,
     fontSize: 18,
     fontWeight: "700",
-    color: "#0B2E7A",
+    color: "#082B66",
     textTransform: "uppercase",
   }}
 >
@@ -218,23 +218,24 @@ if (updateError) {
   style={{
     position: "absolute",
     left: 60,
-    top: 360,
+    top: 410,
     fontSize: 17,
     fontWeight: 700,
-    color: "#0B2E7A",
+    color: "#082B66",
   }}
 >
   {certificateId}
 </div>
+
 {/* COMPANY LOGO */}
 <img
   src="/company.png"
   alt="company"
   style={{
     position: "absolute",
-    top: 65,
-    left: 80,
-    width: 160,
+  top: 62,
+left: 60,
+width: 170,
     height: "auto",
   }}
 />
@@ -245,9 +246,9 @@ if (updateError) {
   alt="aicte"
   style={{
     position: "absolute",
-    top: 79,
-    left: 665,
-    width: 85,
+    top: 70,
+left: 640,
+width: 95,
     height: "auto",
   }}
 />
@@ -258,9 +259,9 @@ if (updateError) {
   alt="iso"
   style={{
     position: "absolute",
-    top: 90,
-    left: 770,
-    width: 90,
+    top: 71,
+    left: 747,
+    width: 115,
     height: "auto",
   }}
 />
@@ -271,9 +272,9 @@ if (updateError) {
   alt="apsche"
   style={{
     position: "absolute",
-    top: 95,
-    left: 880,
-    width: 90,
+    top: 82,
+left: 880,
+width: 110,
     height: "auto",
   }}
 />
@@ -284,22 +285,22 @@ if (updateError) {
   alt="msme"
   style={{
     position: "absolute",
-    top: 87,
-    left: 997,
-    width: 135,
+    top: 82,
+left: 1020,
+width: 145,
     height: "auto",
   }}
 />
 <div
   style={{
     position: "absolute",
-    top: "169px",
+    top: "180px",
     left: "51%",
     transform: "translateX(-50%)",
-    fontSize: "55px",
+    fontSize: "62px",
     fontWeight: "700",
-    color: "#0B2E7A",
-    letterSpacing: "6px",
+    color: "#082B66",
+    letterSpacing: "5px",
     fontFamily: "Georgia, serif",
   }}
 >
@@ -308,7 +309,7 @@ if (updateError) {
 <div
   style={{
     position: "absolute",
-    top: "255px",
+    top: "290px",
     left: "50%",
     transform: "translateX(-50%)",
     display: "flex",
@@ -318,18 +319,18 @@ if (updateError) {
 >
   <div
     style={{
-      width: "90px",
+      width: "120px",
       height: "2px",
-      background: "#D4A017",
+      background: "#C89B3C",
     }}
   />
 
   <span
     style={{
-      fontSize: "28px",
+      fontSize: "22px",
       fontWeight: "700",
-      letterSpacing: "4px",
-      color: "#0B2E7A",
+      letterSpacing: "3px",
+      color: "#000000",
       fontFamily: "Georgia, serif",
     }}
   >
@@ -338,22 +339,22 @@ if (updateError) {
 
   <div
     style={{
-      width: "90px",
+      width: "120px",
       height: "2px",
-      background: "#D4A017",
+      background: "#C89B3C",
     }}
   />
 </div>
 <div
   style={{
     position: "absolute",
-    top: "300px",
+    top: "330px",
     left: "50%",
     transform: "translateX(-50%)",
-    fontSize: "28px",
+    fontSize: "32px",
     fontWeight: "700",
     letterSpacing: "2px",
-    color: "#0B2E7A",
+    color: "#1E4FA3",
     fontFamily: "Georgia, serif",
   }}
 >
@@ -362,10 +363,10 @@ if (updateError) {
 <div
   style={{
     position: "absolute",
-    top: "345px",
+    top: "380px",
     left: "50%",
     transform: "translateX(-50%)",
-    fontSize: "18px",
+    fontSize: "16px",
     fontStyle: "italic",
     letterSpacing: "2px",
     color: "#333",
@@ -374,26 +375,35 @@ if (updateError) {
 >
   "Where Growth Begins"
 </div>
-<div
+{/* <div
   style={{
     position: "absolute",
     left: 55,
-    top: 400,
+    top: 600,
     width: "160px",
     height: "2px",
-    backgroundColor: "#D4A017",
+    backgroundColor: "#C89B3C",
+  }}
+></div> */}
+<div
+  style={{
+    position: "absolute",
+    left: 60,
+    top: 450,
+    width: "160px",
+    height: "1px",
+    background: "#C89B3C"
   }}
 ></div>
-
 {/* VERIFICATION HEADING */}
 <div
   style={{
     position: "absolute",
     left: 60,
-    top: 420,
+    top: 475,
     fontSize: 18,
     fontWeight: "700",
-    color: "#0B2E7A",
+    color: "#082B66",
     textTransform: "uppercase",
   }}
 >
@@ -405,9 +415,9 @@ if (updateError) {
   style={{
     position: "absolute",
     left: 60,
-    top: 455,
-    width: "170px",
-    fontSize: "15px",
+    top: 510,
+    width: "140px",
+    fontSize: "12px",
     lineHeight: "1.6",
     color: "#222",
   }}
@@ -419,44 +429,49 @@ if (updateError) {
 <div
   style={{
     position: "absolute",
-    top: "385px",
-    left: "52%",
+    top: "415px",
+    left: "55%",
     transform: "translateX(-50%)",
-    width: "745px",
-    textAlign: "center",
-    fontSize: "20px",
-    lineHeight: "1.5",
+    width: "780px",
+    textAlign: "left",
+    fontSize: "16px",
+    lineHeight: "1.8",
     color: "#222",
     fontFamily: "Georgia, serif",
   }}
 >
-  This is to certify that{" "}
+  This is to certify that{"  "}
   
-  <span
-    style={{
-      color: "#222",
-      fontSize: "34px",
-      fontWeight: "bold",
-      fontStyle:"oblique",
-
-    }}
-  >
+<span
+  style={{
+    fontSize: "28px",
+    fontWeight: "400",
+    fontFamily: "Georgia, serif",
+    color: "#000",
+    marginLeft: "10px",
+    marginRight: "10px",
+    verticalAlign: "-2px"
+  }}
+>
     {formData.fullName}
-  </span>{" "}
+  </span>&nbsp;
   
-    has successfully completed an internship in{" "}
-  
-  <span
-    style={{
-      color: "#0d275f",
-      fontWeight: "bold",
-      fontSize:"26px"
-    }}
-  >
-    {formData.domain}
-  </span>{" "}
-  
-  at <strong>SNAAL Info Pvt. Ltd.</strong> from{" "}
+      has successfully completed an internship in{" "}
+  <br/>
+<span
+  style={{
+    fontSize: "18px",
+    fontWeight: "700",
+    lineHeight:"1",
+    color: "#082B66"
+  }}
+>
+  {formData.domain}
+</span>
+
+{" "}at{" "}
+<strong>SNAAL Info Pvt. Ltd.</strong>
+{" "}from{" "}
   
 <strong>{formatDate(formData.startDate)}</strong> to{" "}
 
@@ -466,11 +481,11 @@ if (updateError) {
 <span
   style={{
     display: "block",
-    marginTop: "13px",
+    marginTop: "3px",
     fontSize: "16px",
-    lineHeight: "1.6",
+    lineHeight: "1.8",
     color: "#333",
-    width: "85%",
+    width: "100%",
     marginLeft: "auto",
     marginRight: "auto",
   }}
@@ -483,25 +498,34 @@ if (updateError) {
 </div>
 
             {/* ✅ QR (inside box) */}
-            <div style={{ position: "absolute", left: 45, top: 550 }}>
+            <div style={{ position: "absolute", left: 60, top: 600 }}>
               <QRCodeCanvas
                 value={`https://snaalinfo.in/verify?id=${certificateId}`}
-                size={150}
+                size={120}
                 bgColor="#ffffff"
                 fgColor="#000000"
                 level="H"
               />
             </div>
-
+            <div
+             style={{
+              position: "absolute",
+              left: 620,
+              top: 620,
+              width: "2px",
+              height: "110px",
+              background: "#C89B3C"
+                }}
+            ></div>
             {/* ✅ SIGNATURES */}
             <img
               src="/sign1.png"
               alt="sign1"
               style={{
                 position: "absolute",
-                left: 315,
-                top: 590,
-                height: 50,
+                left: 340,
+                top: 585,
+                height: 45,
                 width: "auto",
                 objectFit: "contain",
               }}
@@ -511,10 +535,10 @@ if (updateError) {
               style={{
                 position: "absolute",
                 left: 310,
-                top: 653,
+                top: 640,
                 width: "220px",
                 textAlign: "center",
-                color: "#0B2E7A",
+                color: "#082B66",
               }}
             >
               <div style={{ fontWeight: "bold", fontSize: "17px" }}>
@@ -535,38 +559,50 @@ if (updateError) {
               alt="sign2"
               style={{
                 position: "absolute",
-                left: 685,
-                top:590,
-                height: 50,
+                left: 785,
+                top: 590,
+                height: 45,
                 width: "auto",
                 objectFit: "contain",
                 opacity: 0.9,
               }}
             />
             {/* SIGN 2 DETAILS */}
-            <div
-              style={{
-                position: "absolute",
-                left: 673,
-                top: 650,
-                width: "260px",
-                textAlign: "center",
-                color: "#0B2E7A",
-              }}
-            >
-              <div style={{ fontWeight: "bold", fontSize: "18px" }}>
-                DANDU HARIPRASAD REDDY
-              </div>
+<div
+  style={{
+    position: "absolute",
+    left: 745,
+    top: 640,
+    width: "260px",
+    textAlign: "center",
+    color: "#082B66",
+  }}
+>
+  <div style={{ fontWeight: "bold", fontSize: "18px" }}>
+    DANDU HARIPRASAD REDDY
+  </div>
 
-              <div style={{ fontSize: "14px", marginTop: "5px",color:"#222" }}>
-                Managing Director & Co-Founder
-              </div>
+  <div
+    style={{
+      fontSize: "14px",
+      marginTop: "5px",
+      color: "#222",
+    }}
+  >
+    Managing Director & Co-Founder
+  </div>
 
-              <div style={{ fontSize: "14px",color:"#222" }}>
-                SNAAL Info Pvt. Ltd.
-              </div>
-            </div>
+  <div
+    style={{
+      fontSize: "14px",
+      color: "#222",
+    }}
+  >
+    SNAAL Info Pvt. Ltd.
+  </div>
+</div>
 
+              
             {/* ✅ STAMP */}
             <img
               src="/stamp.png"
@@ -575,8 +611,8 @@ if (updateError) {
                 position: "absolute",
                 right: 40,
                 bottom: 155,
-                width: 130,
-                height: 130,
+                width: 115,
+                height: 115,
                 objectFit: "contain",
                  transform: "rotate(19deg)",
               }}
@@ -585,13 +621,13 @@ if (updateError) {
 <div
   style={{
     position: "absolute",
-    left: 40,
+    left: 25,
     bottom: 25,
     display: "flex",
-    gap: "50px",
+    gap: "40px",
     alignItems: "center",
     color: "#fff",
-    fontSize: "13px",
+    fontSize: "14px",
     fontWeight: "500",
   }}
 >
@@ -615,7 +651,7 @@ if (updateError) {
     right: 60,
     bottom: 12,
     width: "400px",
-    fontSize: "15px",
+    fontSize: "13px",
     color: "#222",
     lineHeight: "1.4",
     textAlign: "left",
@@ -624,8 +660,8 @@ if (updateError) {
   <div
     style={{
       fontWeight: "bold",
-      fontSize: "16px",
-      color: "#0B2E7A",
+      fontSize: "18px",
+      color: "#082B66",
       marginBottom: "6px",
     }}
   >
