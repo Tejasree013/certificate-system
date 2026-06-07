@@ -431,7 +431,7 @@ width: 145,
   style={{
     position: "absolute",
     top: "415px",
-    left: "58%",
+    left: "56%",
     transform: "translateX(-50%)",
     width: "780px",
     textAlign: "left",
@@ -441,19 +441,26 @@ width: 145,
     fontFamily: "Georgia, serif",
   }}
 >
-  This is to certify that{"  "}
-  
+<span
+  style={{
+    position: "relative",
+    top: "8px",
+  }}
+>
+  This is to certify that{" "}
+</span>
 <span
   style={{
     fontSize: "28px",
     fontWeight: "500",
     fontFamily: "'Great Vibes', cursive",
     color: "#dea62d",
-    marginLeft: "10px",
+    marginLeft: "2px",
     width: "900px",
     marginRight: "5px",
     verticalAlign: "-2px",
     marginTop: "0px",
+    
   }}
 >
     {formData.fullName}
@@ -461,7 +468,7 @@ width: 145,
 <span
   style={{
     position: "relative",
-    top: "3px",
+    top: "8px",
   }}
 >
   has successfully completed an internship in{" "}
