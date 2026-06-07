@@ -502,7 +502,7 @@ width: 145,
             {/* ✅ QR (inside box) */}
             <div style={{ position: "absolute", left: 60, top: 600 }}>
               <QRCodeCanvas
-                value={`https://snaalinfo.in/verify?id=${certificateId}`}
+                value={`https://certificate-system-theta.vercel.app/verify?id=${certificateId}`}
                 size={120}
                 bgColor="#ffffff"
                 fgColor="#000000"
