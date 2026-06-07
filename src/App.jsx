@@ -492,9 +492,7 @@ width: 145,
     marginRight: "auto",
   }}
 >
-  During this internship, the intern demonstrated strong technical
-  skills, dedication, and a proactive learning attitude while
-  contributing effectively to development projects.
+During this internship, the intern exhibited strong technical skills, commitment, and a proactive learning approach while making significant contributions to development projects.
 </span>
 
 </div>
