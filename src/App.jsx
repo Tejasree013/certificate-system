@@ -4,6 +4,8 @@ import jsPDF from "jspdf";
 import { QRCodeCanvas } from "qrcode.react";
 import { supabase } from "./supabase";
 
+
+
 // ✅ simple unique id generator
 
 
@@ -92,9 +94,9 @@ if (updateError) {
   const downloadPDF = async () => {
     const input = certificateRef.current;
     if (!input) return;
-
+    await document.fonts.ready;
     const canvas = await html2canvas(input, {
-      scale: 3,
+      scale: 2,
       useCORS: true,
       backgroundColor: null, // important when using image bg
       width: 1200,
@@ -354,7 +356,7 @@ width: 145,
     fontSize: "32px",
     fontWeight: "700",
     letterSpacing: "2px",
-    color: "#1E4FA3",
+    color: "#1E3F78",
     fontFamily: "Georgia, serif",
   }}
 >
@@ -385,16 +387,16 @@ width: 145,
     backgroundColor: "#C89B3C",
   }}
 ></div> */}
-<div
+{/* <div
   style={{
     position: "absolute",
     left: 60,
-    top: 450,
+    top: 455,
     width: "160px",
     height: "1px",
     background: "#C89B3C"
   }}
-></div>
+></div> */}
 {/* VERIFICATION HEADING */}
 <div
   style={{
@@ -510,7 +512,7 @@ width: 145,
             <div
              style={{
               position: "absolute",
-              left: 620,
+              left: 645,
               top: 620,
               width: "2px",
               height: "110px",
@@ -523,7 +525,7 @@ width: 145,
               alt="sign1"
               style={{
                 position: "absolute",
-                left: 340,
+                left: 375,
                 top: 585,
                 height: 45,
                 width: "auto",
@@ -534,8 +536,8 @@ width: 145,
             <div
               style={{
                 position: "absolute",
-                left: 310,
-                top: 640,
+                left: 350,
+                top: 630,
                 width: "220px",
                 textAlign: "center",
                 color: "#082B66",
@@ -559,7 +561,7 @@ width: 145,
               alt="sign2"
               style={{
                 position: "absolute",
-                left: 785,
+                left: 755,
                 top: 590,
                 height: 45,
                 width: "auto",
@@ -571,8 +573,8 @@ width: 145,
 <div
   style={{
     position: "absolute",
-    left: 745,
-    top: 640,
+    left: 715,
+    top: 630,
     width: "260px",
     textAlign: "center",
     color: "#082B66",
@@ -617,6 +619,7 @@ width: 145,
                  transform: "rotate(19deg)",
               }}
             />
+
 {/* CONTACT INFO */}
 <div
   style={{
@@ -629,20 +632,12 @@ width: 145,
     color: "#fff",
     fontSize: "14px",
     fontWeight: "500",
+    lineHeight: "1",
   }}
 >
-  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-   
-    <span>☎ 8464840592</span>
-  </div>
-
-  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-    <span>✉ snaalinfo@gmail.com</span>
-  </div>
-
-  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-    <span>🌐https://snaalinfo.com</span>
-  </div>
+<span>🕾 8464840592</span>
+<span>✉ snaalinfo@gmail.com</span>
+<span>🔗 snaalinfo.com</span>
 </div>
  {/* COMPANY ADDRESS */}
 <div
