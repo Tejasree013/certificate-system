@@ -308,45 +308,44 @@ width: 145,
 >
   CERTIFICATE
 </div>
+{/* LEFT GOLD LINE */}
 <div
   style={{
     position: "absolute",
-    top: "290px",
+    top: "320px",
+    left: "330px",
+    width: "120px",
+    borderTop: "3px solid #C89B3C",
+  }}
+/>
+
+{/* OF COMPLETION */}
+<div
+  style={{
+    position: "absolute",
+    top: "295px",
     left: "50%",
     transform: "translateX(-50%)",
-    display: "flex",
-    alignItems: "center",
-    gap: "15px",
+    fontSize: "22px",
+    fontWeight: "700",
+    letterSpacing: "3px",
+    color: "#000",
+    fontFamily: "Georgia, serif",
   }}
 >
-  <div
-    style={{
-      width: "120px",
-      height: "2px",
-      background: "#C89B3C",
-    }}
-  />
-
-  <span
-    style={{
-      fontSize: "22px",
-      fontWeight: "700",
-      letterSpacing: "3px",
-      color: "#000000",
-      fontFamily: "Georgia, serif",
-    }}
-  >
-    OF COMPLETION
-  </span>
-
-  <div
-    style={{
-      width: "120px",
-      height: "2px",
-      background: "#C89B3C",
-    }}
-  />
+  OF COMPLETION
 </div>
+
+{/* RIGHT GOLD LINE */}
+<div
+  style={{
+    position: "absolute",
+    top: "320px",
+    right: "330px",
+    width: "120px",
+    borderTop: "3px solid #C89B3C",
+  }}
+/>
 <div
   style={{
     position: "absolute",
@@ -432,7 +431,7 @@ width: 145,
   style={{
     position: "absolute",
     top: "415px",
-    left: "55%",
+    left: "58%",
     transform: "translateX(-50%)",
     width: "780px",
     textAlign: "left",
@@ -447,36 +446,43 @@ width: 145,
 <span
   style={{
     fontSize: "28px",
-    fontWeight: "400",
-    fontFamily: "Georgia, serif",
-    color: "#000",
+    fontWeight: "500",
+    fontFamily: "'Great Vibes', cursive",
+    color: "#dea62d",
     marginLeft: "10px",
-    marginRight: "10px",
-    verticalAlign: "-2px"
+    width: "900px",
+    marginRight: "5px",
+    verticalAlign: "-2px",
+    marginTop: "0px",
   }}
 >
     {formData.fullName}
   </span>&nbsp;
-  
-      has successfully completed an internship in{" "}
-  <br/>
+<span
+  style={{
+    position: "relative",
+    top: "3px",
+  }}
+>
+  has successfully completed an internship in{" "}
+</span>
+
 <span
   style={{
     fontSize: "18px",
     fontWeight: "700",
-    lineHeight:"1",
-    color: "#082B66"
+    color: "#082B66",
+    whiteSpace: "nowrap",
   }}
 >
   {formData.domain}
 </span>
 
-{" "}at{" "}
-<strong>SNAAL Info Pvt. Ltd.</strong>
-{" "}from{" "}
-  
-<strong>{formatDate(formData.startDate)}</strong> to{" "}
+<strong> at SNAAL Info Pvt. Ltd.</strong>
 
+{" "}from{" "}
+<strong>{formatDate(formData.startDate)}</strong>
+{" "}to{" "}
 <strong>{formatDate(formData.endDate)}</strong>
 
 <br/>
@@ -487,8 +493,8 @@ width: 145,
     fontSize: "16px",
     lineHeight: "1.8",
     color: "#333",
-    width: "100%",
-    marginLeft: "auto",
+    width: "90%",
+    marginLeft: "0px",
     marginRight: "auto",
   }}
 >
@@ -524,7 +530,7 @@ During this internship, the intern exhibited strong technical skills, commitment
               style={{
                 position: "absolute",
                 left: 375,
-                top: 585,
+                top: 620,
                 height: 45,
                 width: "auto",
                 objectFit: "contain",
@@ -535,7 +541,7 @@ During this internship, the intern exhibited strong technical skills, commitment
               style={{
                 position: "absolute",
                 left: 350,
-                top: 630,
+                top: 655,
                 width: "220px",
                 textAlign: "center",
                 color: "#082B66",
@@ -560,7 +566,7 @@ During this internship, the intern exhibited strong technical skills, commitment
               style={{
                 position: "absolute",
                 left: 755,
-                top: 590,
+                top: 620,
                 height: 45,
                 width: "auto",
                 objectFit: "contain",
@@ -572,7 +578,7 @@ During this internship, the intern exhibited strong technical skills, commitment
   style={{
     position: "absolute",
     left: 715,
-    top: 630,
+    top: 655,
     width: "260px",
     textAlign: "center",
     color: "#082B66",
@@ -609,7 +615,7 @@ During this internship, the intern exhibited strong technical skills, commitment
               alt="stamp"
               style={{
                 position: "absolute",
-                right: 40,
+                right: 50,
                 bottom: 155,
                 width: 115,
                 height: 115,
@@ -633,37 +639,49 @@ During this internship, the intern exhibited strong technical skills, commitment
     lineHeight: "1",
   }}
 >
-<span>🕾 8464840592</span>
+<span>🕾 8522903022</span>
 <span>✉ snaalinfo@gmail.com</span>
 <span>🔗 snaalinfo.com</span>
 </div>
- {/* COMPANY ADDRESS */}
-<div
+{/* Adress block */}
+ <div
   style={{
     position: "absolute",
-    right: 60,
-    bottom: 12,
-    width: "400px",
-    fontSize: "13px",
-    color: "#222",
-    lineHeight: "1.4",
-    textAlign: "left",
+    right: "145px",
+    bottom: "10px",
+    display: "flex",
+    alignItems: "flex-start",
+    gap: "10px",
   }}
 >
-  <div
-    style={{
-      fontWeight: "bold",
-      fontSize: "18px",
-      color: "#082B66",
-      marginBottom: "6px",
-    }}
-  >
-    SNAAL INFO PVT. LTD.
-  </div>
+<img
+  src="/location-icon.png"
+  alt="Location"
+  style={{
+    position: "absolute",
+    right: "330px",   // adjust manually
+    bottom: "35px",  // adjust manually
+    width: "30px",
+    height: "30px",
+  }}
+/>
 
   <div>
-    Building No. 03 BLOCK,WeWork India Management Pvt Ltd,<br />
-    Manyata Techpark Road,Thanisandra, Embassy Manyata <br/>Business Park,Bengaluru, Karnataka - 560045
+    <div
+      style={{
+        fontWeight: "bold",
+        color: "#0b2c5f",
+        fontSize: "20px",
+      }}
+    >
+      SNAAL INFO PVT. LTD.
+    </div>
+
+    <div style={{ fontSize: "12px", lineHeight: "1.4" }}>
+      Building No. 03 BLOCK, WeWork India Management Pvt Ltd,<br />
+      Manyata Techpark Road, Thanisandra, Embassy Manyata<br />
+      Business Park, Bengaluru, Karnataka - 560045
+    </div>
   </div>
 </div>
           </div>
