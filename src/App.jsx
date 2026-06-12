@@ -430,87 +430,78 @@ width: 145,
 <div
   style={{
     position: "absolute",
-    top: "415px",
-    left: "57%",
+    top: "410px",
+    left: "50%",
     transform: "translateX(-50%)",
-    width: "780px",
-    textAlign: "left",
-    fontSize: "16px",
-    lineHeight: "1.8",
+    width: "700px",
+    textAlign: "center",
     color: "#222",
+    
     fontFamily: "Georgia, serif",
   }}
 >
-<span
-  style={{
-    position: "relative",
-    top: "8px",
-  }}
->
-  This is to certify that{" "}
-</span>
-<span
-  style={{
-    fontSize: "28px",
-    fontWeight: "500",
-    fontFamily:   "Garamond, serif",
-    fontWeight: "bold",    
-    color: "#dea62d",
-    marginLeft: "2px",
-    width: "900px",
-    marginRight: "5px",
-    verticalAlign: "-2px",
-    marginTop: "0px",
-    
-  }}
->
+  {/* This is to certify that */}
+  <div
+    style={{
+      fontSize: "18px",
+      marginBottom: "2px",
+    }}
+  >
+    This is to certify that
+  </div>
+
+  {/* Student Name */}
+  <div
+    style={{
+      fontSize: "28px",
+      fontWeight: "bold",
+      fontFamily: "Garamond, serif",
+      color: "#dea62d",
+      marginBottom: "10px",
+      lineHeight: "1.1",
+      textTransform: "uppercase",
+    }}
+  >
     {formData.fullName}
-  </span>&nbsp;
-<span
+  </div>
+
+  {/* Main Paragraph */}
+  <div
   style={{
-    position: "relative",
-    top: "8px",
+    fontSize: "17px",
+    lineHeight: "1.6",
+    color: "#222",
+    textAlign: "left",
+    marginBottom: "12px",
+    marginLeft: "30px",
   }}
 >
-  has successfully completed an internship in{" "}
-</span>
+  has successfully completed an internship in {" "}
+  <strong style={{ color: "#082B66" }}>
+    {formData.domain}
+  </strong>{" "}
 
-<span
-  style={{
-    fontSize: "18px",
-    fontWeight: "700",
-    color: "#082B66",
-    whiteSpace: "nowrap",
-  }}
->
-  {formData.domain}
-</span>
 
-<strong> at SNAAL Info Pvt. Ltd.</strong>
-
-{" "}from{" "}
-<strong>{formatDate(formData.startDate)}</strong>
-{" "}to{" "}
-<strong>{formatDate(formData.endDate)}</strong>
-
-<br/>
-<span
-  style={{
-    display: "block",
-    marginTop: "3px",
-    fontSize: "16px",
-    lineHeight: "1.8",
-    color: "#333",
-    width: "90%",
-    marginLeft: "0px",
-    marginRight: "auto",
-  }}
->
-During this internship, the intern exhibited strong technical skills, commitment, and a proactive learning approach while making significant contributions to development projects.
-</span>
-
+  at <strong>SNAAL Info Pvt. Ltd.</strong> from{" "}
+  <strong>{formatDate(formData.startDate)}</strong> to{" "}
+  <strong>{formatDate(formData.endDate)}</strong>.
 </div>
 
+  {/* Second Paragraph */}
+  <div
+    style={{
+      fontSize: "16px",
+      lineHeight: "1.7",
+      color: "#333",
+      textAlign: "left",
+      width: "96%",
+      margin: "0 auto",
+      marginLeft: "30px",
+    }}
+  >
+During this internship, the intern exhibited strong technical skills, commitment, and a proactive learning approach while making significant contributions to development projects.
+  </div>
+</div>
             {/* ✅ QR (inside box) */}
             <div style={{ position: "absolute", left: 60, top: 600 }}>
               <QRCodeCanvas
