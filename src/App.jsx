@@ -505,7 +505,7 @@ During this internship, the intern exhibited strong technical skills, commitment
             {/* ✅ QR (inside box) */}
             <div style={{ position: "absolute", left: 60, top: 600 }}>
               <QRCodeCanvas
-                value={`https://certificate-system-theta.vercel.app/verify?id=${certificateId}`}
+                value={`https://certificate.snaalinfo.com/verify?id=${certificateId}`}
                 size={120}
                 bgColor="#ffffff"
                 fgColor="#000000"
